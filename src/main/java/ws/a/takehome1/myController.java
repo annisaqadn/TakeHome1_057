@@ -20,11 +20,12 @@ public class myController {
     public String pindah(
             @RequestParam(value = "varN") String isinama,
             @RequestParam(value = "varL") String isilokasi,
+            @RequestParam(value = "varG") String isigambar,
             Model kurir) {
         
         kurir.addAttribute("paketN", isinama);
         kurir.addAttribute("paketL", isilokasi);
-        
+        kurir.addAttribute("paketG", isigambar);
         return "viewpage";
     }
 }
