@@ -26,6 +26,7 @@ public class myController {
         kurir.addAttribute("paketN", isinama);
         kurir.addAttribute("paketL", isilokasi);
         kurir.addAttribute("paketG", isigambar);
+        
         return "viewpage";
     }
 }
