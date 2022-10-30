@@ -21,7 +21,7 @@ import org.springframework.web.multipart.MultipartFile;
  */
 @Controller
 public class myController {
-    public static String UPLOAD_DIRECTORY = System.getProperty("user.dir") + "/src/main/resources/templates";
+    public static String UPLOAD_DIRECTORY = System.getProperty("user.dir") + "/src/main/resources/static";
     @RequestMapping("/pindahhalaman")
     public String pindah(
             @RequestParam(value = "varN") String isinama,
