@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 /**
  *
@@ -20,7 +21,7 @@ public class myController {
     public String pindah(
             @RequestParam(value = "varN") String isinama,
             @RequestParam(value = "varL") String isilokasi,
-            @RequestParam(value = "varG") String isigambar,
+            @RequestParam(value = "varG") MultipartFile isigambar,
             Model kurir) {
         
         kurir.addAttribute("paketN", isinama);
