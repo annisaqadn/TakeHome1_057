@@ -7,16 +7,35 @@ and open the template in the editor.
 <html>
     <head>
         <title>Hasil Save Healing</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
+    <style>
+    fieldset {
+    background-color: wheat;
+    }
+    body {
+    background-color: lightpink;
+    }
+    p {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 45px;
+    }
+    </style>
     <body>
-        <h1>View</h1>
+        <Center><h1 style="font-family: 'Vidaloka', serif;">View</h1></center>
         <hr/>
-        <l th:text="${paketN}"></l>
-        <br/><br/>
-        <l th:text="${paketL}"></l>
-        <br/><br/>
-        <img th:src="${paketG}"/>
+        <fieldset>
+            <p>Nama Tempat Wisata  : <l th:text="${paketN}"></l></p>
+            <br/>
+            <p>Lokasinya berada di <l th:text="${paketL}"></l></p>
+            <br/>
+            <p>Berikut merupakan salah satu foto dari objek wisatanya</p>
+            <br/>
+            <center><img th:src="${paketG}"/></center>
+        </fieldset>
     </body>
 </html>
